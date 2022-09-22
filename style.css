@@ -1,0 +1,323 @@
+body{
+    /* background: rgba(54, 66, 231, 0.458); */
+}
+.top_row{
+  background-color: #999999;
+  width: 1000px;
+  height: 35px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding-top: 10px;
+  color: white;
+  font-weight: bold;
+}
+.standart_row{
+  background-color: #E8EAF5;
+  width: 1000px;
+  height: 55px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  padding-top: 10px;
+}
+/* TOP ROW START */
+.standart_row.active
+{
+  display: block;
+}
+.standart_row.nonactive
+{
+  display: none;
+}
+.top_row_logo{
+  display: inline-block;
+  width: 45px;
+  /* background-color: aqua; */
+}
+.top_row_name{
+display: inline-block;
+  width: 185px;
+  /* background-color: aqua; */
+}
+.top_row_created{
+display: inline-block;
+  width: 150px;
+  /* background-color: aqua; */
+}
+.top_row_category{
+  display: inline-block;
+  width: 150px;
+  /* background-color: aqua; */
+}
+.top_row_content{
+  display: inline-block;
+  width: 150px;
+  /* background-color: aqua; */
+}
+.top_row_dates{
+  display: inline-block;
+  width: 155px;
+  /* background-color: aqua; */
+}
+.top_row_btn_edit{
+  display: inline-block;
+  width: 23px;
+  /* background-color: aqua; */
+}
+.top_row_btn_arch{
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.top_row_btn_del{
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* TOP ROW ENDS */
+.cat_logo{
+  display: inline-block;
+  background-color: #616161;
+  text-align: center;
+  color: white;
+  height: 36px;
+  font-size: 28px;
+  border-radius: 50%;
+  width: 45px;
+  padding-top: 8px;
+}
+.note_name{
+  display: inline-block;
+  width: 185px;
+}
+.note_created{
+  display: inline-block;
+  width: 150px;
+}
+.note_category_name{
+  display: inline-block;
+  width: 150px;
+}
+.note_content{
+  display: inline-block;
+  width: 150px;
+}
+.note_dates{
+  display: inline-block;
+  width: 150px;
+}
+.note_btn_edit{
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+}
+.note_btn_archive{
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+}
+.note_btn_delete{
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+}
+
+.buttons{
+  width: 1000px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* MODAL */
+.modal{
+  display: none;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.modal-content{
+  background-color: white;
+  width: 750px;
+  height: 250px;
+  position: relative;
+}
+.modal_close{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 18px;
+  height: 19px;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: bisque;
+}
+.modal-form{
+  position: absolute;
+  top: 20px;
+  left: 253px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: rgb(233, 162, 76);
+  width: 280px;
+  height: 170px;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.createNoteBTN{
+  position: absolute;
+  border: 0px;
+  bottom: 8px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 25px;
+  background-color: aquamarine;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.editNoteBTN{
+  position: absolute;
+  border: 0px;
+  bottom: 8px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 25px;
+  background-color: aquamarine;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#new_note_category{
+  width: 200px;
+}
+#new_note_name, #new_note_content, #new_note_dates{
+  width: calc(200px - 7.2px);
+  
+}
+
+/* Table2 */
+.top_row_logo {
+  display: inline-block;
+  width: 45px;
+}
+.top_row_note_category {
+  display: inline-block;
+  width: 400px;
+}
+.top_row_active, .top_row_archived {
+  display: inline-block;
+  width: 200px;
+}
+.note_category_stat_name{
+  display: inline-block;
+  width: 400px;
+}
+.note_category_active, .note_category_archived {
+  display: inline-block;
+  width: 200px;
+}
+#table2{
+  margin-top:20px;
+}
+/* MODAL 2*/
+.modal2{
+  display: none;
+}
+.overlay2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.modal-content2{
+  background-color: white;
+  width: 850px;
+  height: 550px;
+  position: relative;
+}
+.modal_close2{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 18px;
+  height: 19px;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: bisque;
+}
+.modal2_content{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: rgba(233, 162, 76, 0.47);
+  /* text-align: end; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  bottom: 30px;
+  right: 30px;
+}
+
+/* ARCHIVE */
+.arch_row{
+  background-color: #E8EAF5;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  padding-top: 5px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  justify-content: space-between;
+}
+.dell_arch{
+  color: red;
+  padding-right: 10px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.arch_logo {
+  display: inline-block;
+  background-color: #616161;
+  text-align: center;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 37px;
+}
+
+.arch_dates{
+  padding-right: 100px;
+}

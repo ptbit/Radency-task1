@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="table" class="table"></div>
+    <div class="buttons">
+        <button id="archive">Archived Notes</button>
+        <button id="add_note">Create Note</button>
+    </div>
+    
+    <div class="modal">
+        <div class="overlay">
+            <div class="modal-content">
+                <div class="modal_close">X</div>
+                <div class="modal-form">
+                    <div class="option">
+                        <span>Note name:</span>
+                    <input id="new_note_name" class="input" type="text" placeholder="new note">
+                    </div>
+                    <div class="option">
+                        <span>Category:</span>
+                        <select id="new_note_category" name="select"> 
+                            <option value="0">Task</option>
+                            <option value="1">Random Thought</option>
+                            <option value="2">Idea</option>
+                        </select>
+                    </div>
+                    <div class="option">
+                        <span>Content:</span>
+                    <input id="new_note_content" class="input" type="text" placeholder="Content">
+                    </div>
+                    <div class="option">
+                        <span>Dates:</span>
+                        <input id="new_note_dates" class="input" type="text" placeholder="Dates">
+                    </div>
+                </div>
+                <div class="modal_buttons">
+                    <button class="createNoteBTN" type="button">Create Note</button>
+                    <button class="editNoteBTN" type="button">Edit Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="table2" class="table">
+        <div class="top_row">
+            <div class="top_row_logo"></div>
+            <div class="note_category_stat_name">Note Category</div>
+            <div class="top_row_active">Active</div>
+            <div class="top_row_archived">Archived</div>
+        </div>
+        <div id="stat_table_content">
+            <div class="standart_row">
+                <div class="cat_logo">1</div>
+                <div class="note_category_stat_name">2</div>
+                <div class="note_category_active">3</div>
+                <div class="note_category_archived">4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal2">
+        <div class="overlay2">
+            <div class="modal-content2">
+                <div class="modal_close2">X</div>
+                    <div class="modal2_content">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/data.js"></script>
+    <script type="module" src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/e0656508e5.js" crossorigin="anonymous"></script>
+</body>
+</html>
