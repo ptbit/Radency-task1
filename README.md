@@ -41,4 +41,5 @@ https://guides.github.com/introduction/flow/
 
 The task should take 1-3 days. If you have any questions, do not hesitate to ask them in the Slack channel #task1
 
+![tz1](https://user-images.githubusercontent.com/101941520/191724536-5b3b1b89-95d7-4381-9fbf-b74b5c9e0764.jpg)
 
